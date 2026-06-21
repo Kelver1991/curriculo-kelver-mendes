@@ -1,10 +1,10 @@
 # Curriculo Online - Kelver Mendes
 
-Pagina pessoal em formato de curriculo online para apresentar resumo profissional, competencias, experiencia pratica e canais de contato.
+Pagina pessoal em formato de curriculo online para apresentar resumo profissional, competencias, projetos, experiencia e canais de contato.
 
 ## Sobre
 
-Este projeto substitui a antiga vitrine conceitual por uma pagina profissional em formato de curriculo. A proposta e criar um link publico para apresentacao pessoal, sem expor arquivos internos ou pastas de projetos.
+Este projeto e uma pagina profissional em formato de curriculo publico para Kelver Mendes, com foco na transicao para tecnologia, experiencia comercial e projetos de back-end.
 
 ## Tecnologias
 
@@ -17,7 +17,7 @@ Este projeto substitui a antiga vitrine conceitual por uma pagina profissional e
 
 - `index.html`: conteudo da pagina.
 - `styles.css`: layout, cores e responsividade.
-- `script.js`: filtro de experiencias e formulario com abertura de e-mail.
+- `script.js`: pequenos comportamentos de navegacao.
 - `foto-perfil-instagram-tratada.png`: imagem principal do portfolio.
 - `assets/`: imagens de apoio.
 
@@ -28,11 +28,11 @@ Abra o arquivo `index.html` no navegador.
 ## Como editar
 
 - Para alterar textos pessoais, edite o `index.html`.
-- Para incluir, remover ou trocar experiencias, edite o array `experiences` no `script.js`.
+- Para alterar experiencias, habilidades ou projetos, edite o `index.html`.
 - Para mudar cores, espacamentos e responsividade, edite o `styles.css`.
 
 ## Proximas melhorias
 
-- Adicionar e-mail profissional no rodape, se quiser divulgar um contato direto.
 - Criar uma versao com curriculo para download.
-- Publicar no GitHub Pages.
+- Adicionar um botao para baixar PDF.
+- Conectar um dominio proprio.

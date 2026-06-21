@@ -5,166 +5,268 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Currículo online de Kelver Mendes, com resumo profissional, competências, experiência prática e contato."
+      content="Curriculo online de Kelver Antonio da Silva Mendes, Diretor Comercial e Desenvolvedor Python em transicao para tecnologia."
     />
-    <title>Kelver Mendes | Currículo Online</title>
-    <link rel="stylesheet" href="styles.css?v=1" />
+    <title>Kelver Mendes | Curriculo Online</title>
+    <link rel="stylesheet" href="styles.css?v=3" />
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#inicio" aria-label="Início do currículo">
-        <span>Kelver</span>
-        <strong>Mendes</strong>
-      </a>
+      <a class="brand" href="#inicio" aria-label="Inicio do curriculo">KM</a>
 
       <nav class="nav" aria-label="Menu principal">
         <a href="#sobre">Sobre</a>
-        <a href="#experiencia">Experiência</a>
         <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiencia</a>
         <a href="#contato">Contato</a>
       </nav>
-
-      <a class="topbar__action" href="#contato">Fale comigo</a>
     </header>
 
     <main>
       <section class="hero" id="inicio">
-        <div class="hero__content">
-          <p class="eyebrow">Currículo online</p>
-          <h1>Kelver Mendes</h1>
-          <p>
-            Profissional em desenvolvimento de soluções digitais, organização
-            de processos, sistemas web e automações para rotinas comerciais,
-            operacionais e administrativas.
-          </p>
-          <div class="hero__actions">
-            <a class="button button--primary" href="#experiencia">Ver experiência</a>
-            <a class="button button--ghost" href="#contato">Contato profissional</a>
-          </div>
+        <div class="portrait-wrap">
+          <img
+            class="portrait"
+            src="foto-perfil-instagram-tratada.png"
+            alt="Foto de Kelver Mendes"
+          />
         </div>
 
-        <aside class="profile-panel" aria-label="Resumo profissional">
-          <img
-            src="foto-perfil-instagram-tratada.png"
-            alt="Foto de perfil de Kelver Mendes"
-          />
-          <div>
-            <span>Perfil profissional</span>
-            <strong>Sistemas web, processos e automações</strong>
+        <div class="hero__content">
+          <span class="status-pill">Disponivel para oportunidades</span>
+          <h1>Ola, sou <strong>Kelver Mendes</strong></h1>
+          <p class="role">Diretor Comercial & Desenvolvedor Python</p>
+          <p>
+            Perfil hibrido com 15+ anos liderando times de vendas e em
+            transicao para TI. Construo APIs com FastAPI, Python e MySQL,
+            aplicando visao estrategica de negocio, lideranca operacional e
+            analise de performance.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="https://github.com/Kelver1991" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a class="button" href="https://www.linkedin.com/in/kelvermendes" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            <a class="button" href="#contato">Contato</a>
           </div>
-        </aside>
+        </div>
       </section>
 
-      <section class="stats" aria-label="Destaques">
-        <article>
-          <strong>HTML, CSS e JS</strong>
-          <span>Criação de páginas e interfaces responsivas</span>
-        </article>
-        <article>
-          <strong>Processos</strong>
-          <span>Organização de rotinas, cadastros e acompanhamento</span>
-        </article>
-        <article>
-          <strong>Ferramentas digitais</strong>
-          <span>Automação, documentação e publicação online</span>
-        </article>
-      </section>
-
-      <section class="section about" id="sobre">
+      <section class="section" id="sobre">
         <div class="section__header">
           <p class="eyebrow">Sobre mim</p>
-          <h2>Resumo profissional</h2>
+          <h2>Experiencia que conecta negocio e tecnologia</h2>
+          <p>Do estoque ao Head de Operacoes. Do varejo ao codigo.</p>
         </div>
-        <div class="about__grid">
-          <p>
-            Tenho experiência prática criando páginas, sistemas simples,
-            rotinas de organização e ferramentas digitais para melhorar o dia a
-            dia de empresas e equipes.
-          </p>
-          <p>
-            Meu foco é unir tecnologia com necessidade real: entender o
-            processo, organizar informações, melhorar a visualização dos dados e
-            entregar soluções fáceis de usar.
-          </p>
+
+        <div class="about-grid">
+          <article>
+            <h3>Trajetoria comercial</h3>
+            <p>
+              15+ anos no varejo de moda, da Colcci ao Head de Operacoes em
+              rede com 16+ lojas. Gestao de equipes, metas e resultados.
+            </p>
+          </article>
+          <article>
+            <h3>Formacao em TI</h3>
+            <p>
+              Graduado em Analise e Desenvolvimento de Sistemas pela UNINTER.
+              TCC com API REST em FastAPI, MySQL e JWT/RBAC.
+            </p>
+          </article>
+          <article>
+            <h3>Localizacao</h3>
+            <p>Brasilia, DF. Aberto a trabalho remoto, presencial ou hibrido.</p>
+          </article>
+          <article>
+            <h3>Objetivo</h3>
+            <p>
+              Unir inteligencia comercial e capacidade tecnica para criar
+              solucoes que geram resultado real.
+            </p>
+          </article>
         </div>
       </section>
 
-      <section class="section section--tint" id="experiencia">
-        <div class="section__header section__header--row">
-          <div>
-            <p class="eyebrow">Experiência</p>
-            <h2>Atuação prática</h2>
-          </div>
-
-          <div class="filters" aria-label="Filtrar experiências">
-            <button class="filter is-active" type="button" data-filter="todos">Todos</button>
-            <button class="filter" type="button" data-filter="web">Web</button>
-            <button class="filter" type="button" data-filter="processos">Processos</button>
-            <button class="filter" type="button" data-filter="automacao">Automação</button>
-          </div>
-        </div>
-
-        <div class="experience-grid" id="experienceGrid"></div>
-      </section>
-
-      <section class="section skills" id="habilidades">
+      <section class="section" id="habilidades">
         <div class="section__header">
           <p class="eyebrow">Habilidades</p>
-          <h2>Competências principais</h2>
+          <h2>Stack tecnica e competencias</h2>
         </div>
 
-        <div class="skills__grid">
+        <div class="skill-groups">
           <article>
-            <span>01</span>
-            <h3>Desenvolvimento web</h3>
-            <p>HTML, CSS, JavaScript, responsividade e publicação de páginas estáticas.</p>
+            <h3>Desenvolvimento back-end</h3>
+            <div class="skill-list">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>MySQL</span>
+              <span>SQLAlchemy</span>
+              <span>JWT / RBAC</span>
+              <span>REST APIs</span>
+            </div>
           </article>
+
           <article>
-            <span>02</span>
-            <h3>Sistemas e rotinas</h3>
-            <p>Cadastros, dashboards, filas de atendimento e organização operacional.</p>
+            <h3>Ferramentas</h3>
+            <div class="skill-list">
+              <span>Git / GitHub</span>
+              <span>Webflow</span>
+              <span>Excel avancado</span>
+              <span>PowerPoint</span>
+              <span>Postman</span>
+            </div>
           </article>
+
           <article>
-            <span>03</span>
-            <h3>Automação e dados</h3>
-            <p>Organização de arquivos, diagnósticos, planilhas, relatórios e tarefas repetitivas.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Documentação</h3>
-            <p>Versionamento com Git, organização de repositórios e documentação objetiva.</p>
+            <h3>Gestao e negocios</h3>
+            <div class="skill-list">
+              <span>Lideranca de equipes</span>
+              <span>Gestao comercial</span>
+              <span>Analise de performance</span>
+              <span>Relatorios executivos</span>
+              <span>KPIs de vendas</span>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="process">
-        <div>
-          <p class="eyebrow">Como trabalho</p>
-          <h2>Organização, clareza e melhoria contínua.</h2>
+      <section class="section" id="projetos">
+        <div class="section__header">
+          <p class="eyebrow">Projetos</p>
+          <h2>O que eu construi</h2>
         </div>
-        <ol>
-          <li>Entendo a rotina, o problema e o resultado esperado.</li>
-          <li>Organizo informações, prioridades e etapas do processo.</li>
-          <li>Crio uma solução funcional com visual limpo e uso simples.</li>
-          <li>Documento o que foi feito para facilitar manutenção e evolução.</li>
-        </ol>
+
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-card__top">
+              <h3>Raizes do Nordeste API</h3>
+              <span>TCC</span>
+            </div>
+            <p>
+              API REST completa para rede ficticia de restaurantes nordestinos.
+              JWT com RBAC, CRUD para cardapio, pedidos e usuarios.
+            </p>
+            <div class="tag-row">
+              <span>FastAPI</span>
+              <span>MySQL</span>
+              <span>SQLAlchemy</span>
+              <span>JWT</span>
+              <span>RBAC</span>
+            </div>
+            <a href="https://github.com/Kelver1991/raizes-do-nordeste" target="_blank" rel="noreferrer">
+              Ver no GitHub
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__top">
+              <h3>Dashboards comerciais interativos</h3>
+              <span>Interno</span>
+            </div>
+            <p>
+              Dashboards em HTML para visualizacao de KPIs de vendas em tempo
+              real e apoio a tomada de decisao da equipe comercial.
+            </p>
+            <div class="tag-row">
+              <span>HTML</span>
+              <span>JavaScript</span>
+              <span>Excel</span>
+              <span>KPIs</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__top">
+              <h3>Gerador automatico de relatorios</h3>
+              <span>Python</span>
+            </div>
+            <p>
+              Automacao para geracao de PDFs e apresentacoes PowerPoint com
+              relatorios executivos, reduzindo horas de trabalho manual.
+            </p>
+            <div class="tag-row">
+              <span>Python</span>
+              <span>PDF</span>
+              <span>PowerPoint</span>
+              <span>Automacao</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experiencia">
+        <div class="section__header">
+          <p class="eyebrow">Experiencia</p>
+          <h2>Trajetoria profissional</h2>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <span class="dot"></span>
+            <h3>Diretor Comercial</h3>
+            <strong>Concept Piscinas & Exteriores - Brasilia, DF</strong>
+            <small>Atual</small>
+            <p>Gestao de consultores de vendas, KPIs e relatorios diarios de performance.</p>
+          </article>
+
+          <article>
+            <span class="dot"></span>
+            <h3>Head de Operacoes</h3>
+            <strong>Colcci - Rede com 16+ lojas</strong>
+            <small>15+ anos de trajetoria</small>
+            <p>
+              Do estoque ate Head de Operacoes. Gestao completa de equipes,
+              processos, metas e lideranca regional.
+            </p>
+          </article>
+
+          <article>
+            <span class="dot"></span>
+            <h3>Graduado em ADS</h3>
+            <strong>UNINTER - Analise e Desenvolvimento de Sistemas</strong>
+            <small>Concluido em maio/2026</small>
+            <p>TCC: API REST com FastAPI, MySQL, JWT e RBAC.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contato">
+        <div class="section__header">
+          <p class="eyebrow">Contato</p>
+          <h2>Vamos conversar?</h2>
+          <p>Aberto a oportunidades em TI, projetos freelance e conexoes profissionais.</p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:kelvermendes1991@gmail.com">
+            <span>E-mail</span>
+            <strong>kelvermendes1991@gmail.com</strong>
+          </a>
+          <a class="contact-card" href="https://wa.me/5561981031867" target="_blank" rel="noreferrer">
+            <span>WhatsApp</span>
+            <strong>(61) 98103-1867</strong>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/kelvermendes" target="_blank" rel="noreferrer">
+            <span>LinkedIn</span>
+            <strong>/in/kelvermendes</strong>
+          </a>
+          <a class="contact-card" href="https://github.com/Kelver1991" target="_blank" rel="noreferrer">
+            <span>GitHub</span>
+            <strong>/Kelver1991</strong>
+          </a>
+        </div>
       </section>
     </main>
 
-    <footer class="footer" id="contato">
-      <div>
-        <p class="eyebrow">Contato</p>
-        <h2>Contato profissional</h2>
-        <p>
-          Para oportunidades, parcerias ou conversas profissionais, acesse meu
-          GitHub.
-        </p>
-        <div class="contact-links">
-          <a href="https://github.com/Kelver1991" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-      </div>
+    <footer class="footer">
+      <p>Kelver Antonio da Silva Mendes - Brasilia, DF - 2026</p>
     </footer>
 
-    <script src="script.js?v=1"></script>
+    <script src="script.js?v=3"></script>
   </body>
 </html>
