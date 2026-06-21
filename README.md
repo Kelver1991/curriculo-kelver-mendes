@@ -1,10 +1,10 @@
-# Curriculo Online - Kelver Mendes
+# Currículo Online - Kelver Mendes
 
-Pagina pessoal em formato de curriculo online para apresentar resumo profissional, competencias, projetos, experiencia e canais de contato.
+Página pessoal em formato de currículo online para apresentar resumo profissional, competências, projetos, experiência e canais de contato.
 
 ## Sobre
 
-Este projeto e uma pagina profissional em formato de curriculo publico para Kelver Mendes, com foco na transicao para tecnologia, experiencia comercial e projetos de back-end.
+Este projeto é uma página profissional em formato de currículo público para Kelver Mendes, com foco na transição para tecnologia, experiência comercial e projetos de back-end.
 
 ## Tecnologias
 
@@ -15,10 +15,10 @@ Este projeto e uma pagina profissional em formato de curriculo publico para Kelv
 
 ## Estrutura
 
-- `index.html`: conteudo da pagina.
+- `index.html`: conteúdo da página.
 - `styles.css`: layout, cores e responsividade.
-- `script.js`: pequenos comportamentos de navegacao.
-- `foto-perfil-instagram-tratada.png`: imagem principal do portfolio.
+- `script.js`: pequenos comportamentos de navegação.
+- `foto-perfil-instagram-tratada.png`: imagem principal do currículo.
 - `assets/`: imagens de apoio.
 
 ## Como abrir
@@ -28,11 +28,11 @@ Abra o arquivo `index.html` no navegador.
 ## Como editar
 
 - Para alterar textos pessoais, edite o `index.html`.
-- Para alterar experiencias, habilidades ou projetos, edite o `index.html`.
-- Para mudar cores, espacamentos e responsividade, edite o `styles.css`.
+- Para alterar experiências, habilidades ou projetos, edite o `index.html`.
+- Para mudar cores, espaçamentos e responsividade, edite o `styles.css`.
 
-## Proximas melhorias
+## Próximas melhorias
 
-- Criar uma versao com curriculo para download.
-- Adicionar um botao para baixar PDF.
-- Conectar um dominio proprio.
+- Criar uma versão com currículo para download.
+- Adicionar um botão para baixar PDF.
+- Conectar um domínio próprio.
