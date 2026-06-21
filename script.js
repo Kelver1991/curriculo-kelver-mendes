@@ -43,8 +43,6 @@ const experiences = [
 
 const experienceGrid = document.querySelector("#experienceGrid");
 const filterButtons = document.querySelectorAll(".filter");
-const contactForm = document.querySelector("#contactForm");
-const formFeedback = document.querySelector("#formFeedback");
 
 function renderExperiences(type = "todos") {
   const visibleExperiences =
@@ -79,24 +77,6 @@ filterButtons.forEach((button) => {
     button.classList.add("is-active");
     renderExperiences(button.dataset.filter);
   });
-});
-
-contactForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const formData = new FormData(contactForm);
-  const name = formData.get("name").trim();
-  const email = formData.get("email").trim();
-  const message = formData.get("message").trim();
-  const subject = encodeURIComponent(`Contato pelo currículo online - ${name}`);
-  const body = encodeURIComponent(
-    `Nome: ${name}\nE-mail: ${email}\n\nMensagem:\n${message}`,
-  );
-
-  formFeedback.textContent =
-    "Mensagem preparada. Se o seu navegador permitir, o app de e-mail será aberto agora.";
-  window.location.href = `mailto:seuemail@exemplo.com?subject=${subject}&body=${body}`;
-  contactForm.reset();
 });
 
 renderExperiences();

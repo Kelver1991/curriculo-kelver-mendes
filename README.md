@@ -33,6 +33,6 @@ Abra o arquivo `index.html` no navegador.
 
 ## Proximas melhorias
 
-- Trocar o e-mail do rodape caso prefira outro contato.
+- Adicionar e-mail profissional no rodape, se quiser divulgar um contato direto.
 - Criar uma versao com curriculo para download.
 - Publicar no GitHub Pages.
