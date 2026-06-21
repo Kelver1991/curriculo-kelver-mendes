@@ -89,6 +89,27 @@ img {
   color: var(--text);
 }
 
+.nav a[aria-current="page"] {
+  color: var(--soft-2);
+}
+
+.print-button {
+  min-height: 38px;
+  border: 1px solid rgba(141, 131, 255, 0.48);
+  padding: 0 14px;
+  color: var(--text);
+  background: rgba(112, 103, 232, 0.14);
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.print-button:hover {
+  border-color: var(--soft-2);
+}
+
 main {
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
@@ -215,6 +236,38 @@ p {
   border-color: var(--soft);
 }
 
+.impact-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.26);
+}
+
+.impact-strip article {
+  min-height: 116px;
+  display: grid;
+  align-content: center;
+  gap: 7px;
+  padding: 22px;
+  background: rgba(18, 19, 29, 0.92);
+}
+
+.impact-strip strong {
+  color: var(--text);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  line-height: 1;
+}
+
+.impact-strip span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
 .section {
   padding: clamp(54px, 8vw, 86px) 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -242,7 +295,8 @@ p {
 
 .about-grid article,
 .project-card,
-.contact-card {
+.contact-card,
+.value-grid article {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent),
     var(--surface);
@@ -303,6 +357,28 @@ p {
   height: 6px;
   background: var(--soft-2);
   border-radius: 50%;
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.value-grid article {
+  min-height: 250px;
+  padding: 26px;
+}
+
+.value-grid span {
+  display: inline-block;
+  margin-bottom: 40px;
+  color: var(--gold);
+  font-weight: 900;
+}
+
+.value-grid p {
+  margin-bottom: 0;
 }
 
 .project-list {
@@ -436,6 +512,34 @@ p {
   overflow-wrap: anywhere;
 }
 
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 8px;
+}
+
+.contact-actions a,
+.contact-actions button {
+  min-height: 34px;
+  border: 1px solid rgba(141, 131, 255, 0.38);
+  padding: 7px 10px;
+  color: #dcd9ff;
+  background: rgba(112, 103, 232, 0.08);
+  border-radius: 7px;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.copy-feedback {
+  min-height: 24px;
+  margin: 16px 0 0;
+  color: var(--soft-2);
+  font-size: 0.9rem;
+}
+
 .footer {
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
@@ -472,13 +576,67 @@ p {
     padding-left: 0;
   }
 
+  .impact-strip,
   .about-grid,
-  .contact-grid {
+  .contact-grid,
+  .value-grid {
     grid-template-columns: 1fr;
   }
 
   .skill-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media print {
+  body {
+    color: #111;
+    background: white;
+  }
+
+  body::before,
+  .topbar,
+  .hero__actions,
+  .contact-actions,
+  .copy-feedback {
+    display: none;
+  }
+
+  main,
+  .footer {
+    width: 100%;
+  }
+
+  .hero,
+  .section {
+    padding: 24px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .impact-strip,
+  .about-grid,
+  .skill-list,
+  .value-grid,
+  .contact-grid {
+    display: block;
+  }
+
+  .impact-strip article,
+  .about-grid article,
+  .project-card,
+  .value-grid article,
+  .contact-card {
+    margin-bottom: 10px;
+    color: #111;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: none;
+  }
+
+  p,
+  .contact-card strong,
+  .impact-strip span {
+    color: #333;
   }
 }
 

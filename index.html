@@ -17,10 +17,13 @@
       <nav class="nav" aria-label="Menu principal">
         <a href="#sobre">Sobre</a>
         <a href="#habilidades">Habilidades</a>
+        <a href="#diferenciais">Diferenciais</a>
         <a href="#projetos">Projetos</a>
         <a href="#experiencia">Experiencia</a>
         <a href="#contato">Contato</a>
       </nav>
+
+      <button class="print-button" type="button" data-print>Salvar PDF</button>
     </header>
 
     <main>
@@ -54,6 +57,25 @@
             <a class="button" href="#contato">Contato</a>
           </div>
         </div>
+      </section>
+
+      <section class="impact-strip" aria-label="Resumo de impacto profissional">
+        <article>
+          <strong>15+ anos</strong>
+          <span>em varejo, vendas e operacao</span>
+        </article>
+        <article>
+          <strong>16+ lojas</strong>
+          <span>em gestao operacional e lideranca regional</span>
+        </article>
+        <article>
+          <strong>ADS</strong>
+          <span>formacao concluida em tecnologia</span>
+        </article>
+        <article>
+          <strong>APIs</strong>
+          <span>Python, FastAPI, MySQL e autenticacao</span>
+        </article>
       </section>
 
       <section class="section" id="sobre">
@@ -135,10 +157,49 @@
         </div>
       </section>
 
+      <section class="section" id="diferenciais">
+        <div class="section__header">
+          <p class="eyebrow">Diferenciais</p>
+          <h2>Onde eu gero valor</h2>
+          <p>
+            Minha vantagem esta em traduzir necessidade de negocio em solucao
+            tecnica simples, mensuravel e facil de adotar pela equipe.
+          </p>
+        </div>
+
+        <div class="value-grid">
+          <article>
+            <span>01</span>
+            <h3>Visao de dono</h3>
+            <p>
+              Experiencia real com meta, margem, equipe, loja, estoque,
+              acompanhamento comercial e pressao de resultado.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Traducao negocio-tecnologia</h3>
+            <p>
+              Capacidade de conversar com operacao, entender a dor e transformar
+              isso em fluxo, API, dashboard ou automacao.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Entrega pragmatica</h3>
+            <p>
+              Foco em versoes funcionais, documentadas e uteis para gerar ganho
+              pratico antes de sofisticar a solucao.
+            </p>
+          </article>
+        </div>
+      </section>
+
       <section class="section" id="projetos">
         <div class="section__header">
           <p class="eyebrow">Projetos</p>
           <h2>O que eu construi</h2>
+          <p>Projetos apresentados como evidencias tecnicas, sem expor sistemas internos ou dados sensiveis.</p>
         </div>
 
         <div class="project-list">
@@ -243,14 +304,22 @@
         </div>
 
         <div class="contact-grid">
-          <a class="contact-card" href="mailto:kelvermendes1991@gmail.com">
+          <article class="contact-card">
             <span>E-mail</span>
             <strong>kelvermendes1991@gmail.com</strong>
-          </a>
-          <a class="contact-card" href="https://wa.me/5561981031867" target="_blank" rel="noreferrer">
+            <div class="contact-actions">
+              <a href="mailto:kelvermendes1991@gmail.com">Enviar e-mail</a>
+              <button type="button" data-copy="kelvermendes1991@gmail.com">Copiar</button>
+            </div>
+          </article>
+          <article class="contact-card">
             <span>WhatsApp</span>
             <strong>(61) 98103-1867</strong>
-          </a>
+            <div class="contact-actions">
+              <a href="https://wa.me/5561981031867" target="_blank" rel="noreferrer">Abrir WhatsApp</a>
+              <button type="button" data-copy="61981031867">Copiar</button>
+            </div>
+          </article>
           <a class="contact-card" href="https://www.linkedin.com/in/kelvermendes" target="_blank" rel="noreferrer">
             <span>LinkedIn</span>
             <strong>/in/kelvermendes</strong>
@@ -260,6 +329,7 @@
             <strong>/Kelver1991</strong>
           </a>
         </div>
+        <p class="copy-feedback" id="copyFeedback" role="status"></p>
       </section>
     </main>
 
