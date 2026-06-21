@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Currículo online de Kelver Mendes, com resumo profissional, competências, experiência prática e contato."
+    />
+    <title>Kelver Mendes | Currículo Online</title>
+    <link rel="stylesheet" href="styles.css?v=1" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Início do currículo">
+        <span>Kelver</span>
+        <strong>Mendes</strong>
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="topbar__action" href="#contato">Fale comigo</a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero__content">
+          <p class="eyebrow">Currículo online</p>
+          <h1>Kelver Mendes</h1>
+          <p>
+            Profissional em desenvolvimento de soluções digitais, organização
+            de processos, sistemas web e automações para rotinas comerciais,
+            operacionais e administrativas.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#experiencia">Ver experiência</a>
+            <a class="button button--ghost" href="#contato">Contato profissional</a>
+          </div>
+        </div>
+
+        <aside class="profile-panel" aria-label="Resumo profissional">
+          <img
+            src="foto-perfil-instagram-tratada.png"
+            alt="Foto de perfil de Kelver Mendes"
+          />
+          <div>
+            <span>Perfil profissional</span>
+            <strong>Sistemas web, processos e automações</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="stats" aria-label="Destaques">
+        <article>
+          <strong>HTML, CSS e JS</strong>
+          <span>Criação de páginas e interfaces responsivas</span>
+        </article>
+        <article>
+          <strong>Processos</strong>
+          <span>Organização de rotinas, cadastros e acompanhamento</span>
+        </article>
+        <article>
+          <strong>Ferramentas digitais</strong>
+          <span>Automação, documentação e publicação online</span>
+        </article>
+      </section>
+
+      <section class="section about" id="sobre">
+        <div class="section__header">
+          <p class="eyebrow">Sobre mim</p>
+          <h2>Resumo profissional</h2>
+        </div>
+        <div class="about__grid">
+          <p>
+            Tenho experiência prática criando páginas, sistemas simples,
+            rotinas de organização e ferramentas digitais para melhorar o dia a
+            dia de empresas e equipes.
+          </p>
+          <p>
+            Meu foco é unir tecnologia com necessidade real: entender o
+            processo, organizar informações, melhorar a visualização dos dados e
+            entregar soluções fáceis de usar.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--tint" id="experiencia">
+        <div class="section__header section__header--row">
+          <div>
+            <p class="eyebrow">Experiência</p>
+            <h2>Atuação prática</h2>
+          </div>
+
+          <div class="filters" aria-label="Filtrar experiências">
+            <button class="filter is-active" type="button" data-filter="todos">Todos</button>
+            <button class="filter" type="button" data-filter="web">Web</button>
+            <button class="filter" type="button" data-filter="processos">Processos</button>
+            <button class="filter" type="button" data-filter="automacao">Automação</button>
+          </div>
+        </div>
+
+        <div class="experience-grid" id="experienceGrid"></div>
+      </section>
+
+      <section class="section skills" id="habilidades">
+        <div class="section__header">
+          <p class="eyebrow">Habilidades</p>
+          <h2>Competências principais</h2>
+        </div>
+
+        <div class="skills__grid">
+          <article>
+            <span>01</span>
+            <h3>Desenvolvimento web</h3>
+            <p>HTML, CSS, JavaScript, responsividade e publicação de páginas estáticas.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Sistemas e rotinas</h3>
+            <p>Cadastros, dashboards, filas de atendimento e organização operacional.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Automação e dados</h3>
+            <p>Organização de arquivos, diagnósticos, planilhas, relatórios e tarefas repetitivas.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Documentação</h3>
+            <p>Versionamento com Git, organização de repositórios e documentação objetiva.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="process">
+        <div>
+          <p class="eyebrow">Como trabalho</p>
+          <h2>Organização, clareza e melhoria contínua.</h2>
+        </div>
+        <ol>
+          <li>Entendo a rotina, o problema e o resultado esperado.</li>
+          <li>Organizo informações, prioridades e etapas do processo.</li>
+          <li>Crio uma solução funcional com visual limpo e uso simples.</li>
+          <li>Documento o que foi feito para facilitar manutenção e evolução.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="footer" id="contato">
+      <div>
+        <p class="eyebrow">Contato</p>
+        <h2>Contato profissional</h2>
+        <p>
+          Para oportunidades, parcerias ou conversas profissionais, acesse meu
+          GitHub ou envie uma mensagem pelo e-mail informado.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a>
+          <a href="https://github.com/Kelver1991" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label for="name">Seu nome</label>
+        <input id="name" name="name" type="text" placeholder="Como posso te chamar?" required />
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" required />
+
+        <label for="message">Mensagem</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Escreva sua mensagem"
+          required
+        ></textarea>
+
+        <button type="submit">Preparar mensagem</button>
+        <p class="form-feedback" id="formFeedback" role="status"></p>
+      </form>
+    </footer>
+
+    <script src="script.js?v=1"></script>
+  </body>
+</html>
